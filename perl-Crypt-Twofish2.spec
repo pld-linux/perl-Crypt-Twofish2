@@ -3,8 +3,8 @@
 %bcond_without	tests	# Do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Crypt
-%define	pnam	Twofish2
+%define		pdir	Crypt
+%define		pnam	Twofish2
 Summary:	Crypt::Twofish2 - Crypt::CBC compliant Twofish encryption Perl module
 Summary(pl):	Crypt::Twofish2 - perlowy modu³ szyfru Twofish zgodny z Crypt::CBC
 Name:		perl-Crypt-Twofish2
