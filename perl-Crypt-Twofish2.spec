@@ -35,7 +35,7 @@ Crypt::Twofish2 mo¿e dzia³aæ zarówno w trybie ECB jak i CBC.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make} OPTIMIZE="%{rpmcflags}"
 %{!?_without_tests:%{__make} test}
 
