@@ -1,6 +1,7 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+%bcond_without	tests	# Do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Crypt
 %define		pnam	Twofish2
@@ -37,7 +38,8 @@ Crypt::Twofish2 mo¿e dzia³aæ zarówno w trybie ECB jak i CBC.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make} OPTIMIZE="%{rpmcflags}"
-%{!?_without_tests:%{__make} test}
+
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
