@@ -8,12 +8,12 @@ Summary:	Crypt::Twofish2 - Crypt::CBC compliant Twofish encryption Perl module
 Summary(pl):	Crypt::Twofish2 - perlowy modu³ szyfru Twofish zgodny z Crypt::CBC
 Name:		perl-Crypt-Twofish2
 Version:	0.06
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl-devel >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -33,7 +33,8 @@ Crypt::Twofish2 mo¿e dzia³aæ zarówno w trybie ECB jak i CBC.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make} OPTIMIZE="%{rpmcflags}"
 %{!?_without_tests:%{__make} test}
 
@@ -49,8 +50,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_sitearch}/Crypt/Twofish2.pm
-%dir %{perl_sitearch}/auto/Crypt/Twofish2
-%{perl_sitearch}/auto/Crypt/Twofish2/*.bs
-%attr(755,root,root) %{perl_sitearch}/auto/Crypt/Twofish2/*.so
+%{perl_vendorarch}/Crypt/Twofish2.pm
+%dir %{perl_vendorarch}/auto/Crypt/Twofish2
+%{perl_vendorarch}/auto/Crypt/Twofish2/*.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/Crypt/Twofish2/*.so
 %{_mandir}/man3/*
