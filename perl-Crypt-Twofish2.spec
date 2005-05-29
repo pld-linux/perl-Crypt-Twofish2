@@ -8,12 +8,12 @@
 Summary:	Crypt::Twofish2 - Crypt::CBC compliant Twofish encryption Perl module
 Summary(pl):	Crypt::Twofish2 - perlowy modu³ szyfru Twofish zgodny z Crypt::CBC
 Name:		perl-Crypt-Twofish2
-Version:	1.0
+Version:	1.01
 Release:	1
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	6080da5e33ea4e5f9ed7e546bf914817
+# Source0-md5:	e7c6e90ddf22306ebcc1a91df47c26d9
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
