@@ -6,7 +6,7 @@
 %define		pdir	Crypt
 %define		pnam	Twofish2
 Summary:	Crypt::Twofish2 - Crypt::CBC compliant Twofish encryption Perl module
-Summary(pl):	Crypt::Twofish2 - perlowy modu≥ szyfru Twofish zgodny z Crypt::CBC
+Summary(pl.UTF-8):   Crypt::Twofish2 - perlowy modu≈Ç szyfru Twofish zgodny z Crypt::CBC
 Name:		perl-Crypt-Twofish2
 Version:	1.01
 Release:	1
@@ -25,11 +25,11 @@ Although it is "Crypt::CBC" compliant you usually gain nothing by
 using that module (except generality), since "Crypt::Twofish2" can
 work in either ECB or CBC mode.
 
-%description -l pl
-Ten modu≥ jest implementacj± szyfru Twofish w mniej debilny (powolny
-i paskudny) sposÛb niø modu≥ Crypt::Twofish. Pomimo tego, øe jest
-zgodny z Crypt::CBC, nie ma potrzeby uøywania tamtego modu≥u, poniewaø
-Crypt::Twofish2 moøe dzia≥aÊ zarÛwno w trybie ECB jak i CBC.
+%description -l pl.UTF-8
+Ten modu≈Ç jest implementacjƒÖ szyfru Twofish w mniej debilny (powolny
+i paskudny) spos√≥b ni≈º modu≈Ç Crypt::Twofish. Pomimo tego, ≈ºe jest
+zgodny z Crypt::CBC, nie ma potrzeby u≈ºywania tamtego modu≈Çu, poniewa≈º
+Crypt::Twofish2 mo≈ºe dzia≈Çaƒá zar√≥wno w trybie ECB jak i CBC.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
