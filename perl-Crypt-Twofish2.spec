@@ -6,7 +6,7 @@
 %define		pdir	Crypt
 %define		pnam	Twofish2
 Summary:	Crypt::Twofish2 - Crypt::CBC compliant Twofish encryption Perl module
-Summary(pl.UTF-8):   Crypt::Twofish2 - perlowy moduł szyfru Twofish zgodny z Crypt::CBC
+Summary(pl.UTF-8):	Crypt::Twofish2 - perlowy moduł szyfru Twofish zgodny z Crypt::CBC
 Name:		perl-Crypt-Twofish2
 Version:	1.01
 Release:	1
