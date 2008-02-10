@@ -9,7 +9,7 @@ Summary:	Crypt::Twofish2 - Crypt::CBC compliant Twofish encryption Perl module
 Summary(pl.UTF-8):	Crypt::Twofish2 - perlowy moduł szyfru Twofish zgodny z Crypt::CBC
 Name:		perl-Crypt-Twofish2
 Version:	1.01
-Release:	1
+Release:	2
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
