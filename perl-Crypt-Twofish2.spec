@@ -10,10 +10,11 @@ Summary(pl.UTF-8):	Crypt::Twofish2 - perlowy moduł szyfru Twofish zgodny z Cryp
 Name:		perl-Crypt-Twofish2
 Version:	1.01
 Release:	2
-License:	Artistic
+License:	GPL v2
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Crypt/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	e7c6e90ddf22306ebcc1a91df47c26d9
+URL:		http://search.cpan.org/dist/Crypt-Twofish2/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
