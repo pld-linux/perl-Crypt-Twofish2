@@ -58,6 +58,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes README
 %{perl_vendorarch}/Crypt/Twofish2.pm
 %dir %{perl_vendorarch}/auto/Crypt/Twofish2
-%{perl_vendorarch}/auto/Crypt/Twofish2/*.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Crypt/Twofish2/*.so
 %{_mandir}/man3/*
